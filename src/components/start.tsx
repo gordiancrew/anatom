@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../styles/start.scss";
 import HexagonButton from "../utils/hexagon-button";
-import LangButtons from "../utils/lang-buttons";
-import Footer from "./footer";
+// import LangButtons from "../utils/lang-buttons";
+// import Footer from "./footer";
 
 interface IStart {
   changeLng: Function;
@@ -23,7 +23,7 @@ function Start({ changeLng, t }: IStart) {
           localStorage.currentName
         }"`}</div>
       ) : null}
-      <LangButtons changeLng={changeLng} />
+      {/* <LangButtons changeLng={changeLng} /> */}
       {localStorage.currentName ? (
         <HexagonButton content={t("signinup.yourprofile")} link="/profile" />
       ) : null}
@@ -37,7 +37,7 @@ function Start({ changeLng, t }: IStart) {
       ) : null}
       <HexagonButton content={t("signinup.play")} link="/question" />
       <HexagonButton content={t("signinup.rules")} link="/rules" />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
