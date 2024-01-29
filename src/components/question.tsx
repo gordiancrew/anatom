@@ -1,22 +1,18 @@
 import { useEffect, useState } from "react";
 import { shuffleArr } from "../data/functionss";
-import {
-
-  dataQuestionBl,
-  dataQuestionEn,
-  dataQuestionRu,
-} from "../data/questions";
+import { dataQuestionRu } from "../data/questions";
 import { questState } from "../types.ts/iquest-state";
 
 import End from "../utils/end";
 import HintBoolean from "../utils/hint-boolean";
 import HintCall from "../utils/hint-call";
+import Picture from "../utils/picture";
 import ProgressShema from "../utils/progress-shema";
 import QuestionHeader from "../utils/question-header";
 import QuizContent from "../utils/quiz-content";
 import Timer from "../utils/timer";
 
-function Question({ t }: { t: Function }) {
+function Question() {
   const [level, setLevel] = useState(0);
   let [totalPoints, setTotalPoints] = useState(0);
   const [timeOn, setTimeOn] = useState(true);
@@ -40,21 +36,20 @@ function Question({ t }: { t: Function }) {
   }
 
   useEffect(() => {
-    if (localStorage.languagegame === 'ru') {
-      shuffleArr(dataQuestionRu[level]);
-      shuffleArr(dataQuestionRu[level][0].ans);
-    } else if (localStorage.languagegame === 'en') {
-      shuffleArr(dataQuestionEn[level]);
-      shuffleArr(dataQuestionEn[level][0].ans);
-    } else if (localStorage.languagegame === 'bl') {
-      shuffleArr(dataQuestionBl[level]);
-      shuffleArr(dataQuestionBl[level][0].ans);
-    }else{
-      shuffleArr(dataQuestionRu[level]);
-      shuffleArr(dataQuestionRu[level][0].ans);
-    }
+    // if (localStorage.languagegame === 'ru') {
+    shuffleArr(dataQuestionRu[level]);
+    shuffleArr(dataQuestionRu[level][0].ans);
+    // } else if (localStorage.languagegame === 'en') {
+    //   shuffleArr(dataQuestionEn[level]);
+    //   shuffleArr(dataQuestionEn[level][0].ans);
+    // } else if (localStorage.languagegame === 'bl') {
+    //   shuffleArr(dataQuestionBl[level]);
+    //   shuffleArr(dataQuestionBl[level][0].ans);
+    // }else{
+    //   shuffleArr(dataQuestionRu[level]);
+    //   shuffleArr(dataQuestionRu[level][0].ans);
+    // }
   }, [level]);
-
 
   if (answerShema === questState.quiz) {
     return (
@@ -66,20 +61,19 @@ function Question({ t }: { t: Function }) {
           setTimeOn={setTimeOn}
           setTimer={setTimer}
           question={
-            localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ans :
-              localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ans :
-                dataQuestionRu[level][0].ans
+            // localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ans :
+            //   localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ans :
+            dataQuestionRu[level][0].ans
           }
           shuffleArr={shuffleArr}
-          t={t}
         />
         <HintBoolean
           visibleHintBoolean={visibleHintBoolean}
           setVisibleHintBoolean={setVisibleHintBoolean}
           question={
-            localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ans :
-              localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ans :
-                dataQuestionRu[level][0].ans
+            // localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ans :
+            //   localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ans :
+            dataQuestionRu[level][0].ans
           }
           setTimeOn={setTimeOn}
           setTimer={setTimer}
@@ -112,16 +106,17 @@ function Question({ t }: { t: Function }) {
           timer={timer}
           setRightAnswerStyle={setRightAnswerStyle}
         />
+        <Picture/>
         <QuizContent
           ask={
-            localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ask :
-            localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ask :
-              dataQuestionRu[level][0].ask
+            // localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ask :
+            // localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ask :
+            dataQuestionRu[level][0].ask
           }
           anses={
-            localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ans :
-            localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ans :
-              dataQuestionRu[level][0].ans
+            // localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ans :
+            // localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ans :
+            dataQuestionRu[level][0].ans
           }
           level={level}
           setLevel={setLevel}
@@ -136,7 +131,7 @@ function Question({ t }: { t: Function }) {
           setFiftyFiftyStyle={setFiftyFiftyStyle}
           booleanStyle={booleanStyle}
           setBooleanStyle={setBooleanStyle}
-        // play={play}
+          // play={play}
         />
       </div>
     );
@@ -148,7 +143,6 @@ function Question({ t }: { t: Function }) {
         setAnswerShema={setAnswerShema}
         setTimer={setTimer}
         setTimeOn={setTimeOn}
-        t={t}
       />
     );
   } else {
@@ -158,7 +152,6 @@ function Question({ t }: { t: Function }) {
         repeatGame={repeatGame}
         level={level}
         keepMoney={keepMoney}
-        t={t}
       />
     );
   }

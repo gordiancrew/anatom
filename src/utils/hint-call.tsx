@@ -11,18 +11,18 @@ interface ICallOptions {
   setTimeOn: Function;
   setTimer: Function;
   shuffleArr: Function;
-  t: Function;
+
 }
 
 function HintCall(props: ICallOptions) {
   const arrLeters = ["A", "B", "C", "D"];
   const arrNumbers = [0, 9, 8, 7, 1, 2, 3, 5, 4, 6];
-  const { t } = props;
+  
 
   let arrResult: number[] = [];
   const [gameOver, setGameOver] = useState(false);
   const [currentBlick, setCurrentBlick] = useState(-1);
-  const [display, setDisplay] = useState(t("hint.condition"));
+  const [display, setDisplay] = useState("hint.condition");
   const [playClick] = useSound(
     "https://zvukipro.com/uploads/files/2019-09/1568277966_7ef6b05043704d0.mp3"
   );
@@ -35,7 +35,7 @@ function HintCall(props: ICallOptions) {
       }, (i + 1) * 1000 + 2000);
     }
 
-    setTimeout(() => setDisplay(t("hint.requirement")), 16000);
+    setTimeout(() => setDisplay("hint.requirement"), 16000);
   }
 
   function returnQuest() {
@@ -76,7 +76,7 @@ function HintCall(props: ICallOptions) {
       console.log(arrResult);
 
       setDisplay(
-        `${t("hint.probability")} ${count * 10} % ${t("hint.answer")} ${
+        `${'bear'} ${count * 10} % ${"fox"} ${
           arrPercent[0]
         }`
       );
@@ -108,10 +108,10 @@ function HintCall(props: ICallOptions) {
           style={{ visibility: gameOver ? "hidden" : "visible" }}
           onClick={goGame}
         >
-          {t("signinup.play")}
+          {'hear'}
         </button>
         <button onClick={returnQuest} className={hintStyle.button}>
-          {t("hint.backToQuestion")}
+          {'table'}
         </button>
       </div>
     </div>

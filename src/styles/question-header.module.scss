@@ -1,9 +1,10 @@
 .headerBox {
-  height: 20vh;
+  height: 10vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border:2px solid yellow;
 }
 
 .headerHints {
@@ -43,7 +44,7 @@
 
   .headerBox {
     justify-content: space-around;
-    height: 15vh;
+    height: 10vh;
   }
 
   .headerHints {

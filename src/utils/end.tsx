@@ -8,7 +8,7 @@ interface IEnd {
   repeatGame: Function;
   level: number;
   keepMoney: boolean;
-  t: Function;
+
 }
 
 const win = [
@@ -35,7 +35,7 @@ function End(props: IEnd) {
   } else {
     winnerSum = 1000000;
   }
-  const { t } = props;
+ 
 
 
   function updateScore() {
@@ -51,16 +51,16 @@ function End(props: IEnd) {
   return (
     <div className={style.wrappage}>
       <h1>{games}</h1>
-      <h2 className={style.wrapperHeaderWin}>{t("gameover.gameover")}</h2>
+      <h2 className={style.wrapperHeaderWin}>{'gameover'}</h2>
       <h1 className={style.wrapperWin}>
-        {t("gameover.youresult")}
+        {"you result"}
         <br /> {winnerSum}
       </h1>
-      <Link to="/home">
+      <Link to="/">
         <button
           onClick={updateScore}
 
-          className={st.button_endPage}>{t("gameover.exitmenu")}</button>
+          className={st.button_endPage}>{'gameover.exitmenu'}</button>
       </Link>
     </div>
   );

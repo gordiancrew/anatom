@@ -8,7 +8,7 @@ interface IProgress {
   setAnswerShema: Function;
   setTimer: Function;
   setTimeOn: Function;
-  t: Function;
+
 }
 function ProgressShema(props: IProgress) {
   function progressHundler() {
@@ -59,7 +59,7 @@ function ProgressShema(props: IProgress) {
           </div>
         ))}
         <div className={st.button_progress}>
-          <button onClick={progressHundler}>{props.t("gameover.nextquestion")}</button>
+          <button onClick={progressHundler}>{"тут чтото есть"}</button>
         </div>
       </div>
     </div>

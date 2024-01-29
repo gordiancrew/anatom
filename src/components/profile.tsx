@@ -21,7 +21,7 @@ function Profile() {
           
             <h2>{"Суммарный выйгрыш: "+score}  </h2>
             <h2>{"Количество игр: "+games}</h2>
-            <HexagonButton content={"В меню"} link="/home" />
+            <HexagonButton content={"В меню"} link="/" />
         </div>
     );
 }
