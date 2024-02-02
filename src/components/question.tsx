@@ -6,7 +6,6 @@ import { questState } from "../types.ts/iquest-state";
 import End from "../utils/end";
 import HintBoolean from "../utils/hint-boolean";
 import HintCall from "../utils/hint-call";
-import Picture from "../utils/picture";
 import ProgressShema from "../utils/progress-shema";
 import QuestionHeader from "../utils/question-header";
 import QuizContent from "../utils/quiz-content";

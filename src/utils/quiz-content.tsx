@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import useSound from "use-sound";
 import { booleanFalse, booleanTrue } from "../data/boolean";
 import { shuffleArr } from "../data/functionss";
-import {  dataQuestionRu } from "../data/questions";
 import cl from "../styles/quiz.module.scss";
 import { CheckAnswer } from "../types.ts/chaeckAnswer";
 import { questState } from "../types.ts/iquest-state";
