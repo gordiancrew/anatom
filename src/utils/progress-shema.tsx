@@ -59,7 +59,7 @@ function ProgressShema(props: IProgress) {
           </div>
         ))}
         <div className={st.button_progress}>
-          <button onClick={progressHundler}>{"тут чтото есть"}</button>
+          <button onClick={progressHundler}>{"Следующий"}</button>
         </div>
       </div>
     </div>

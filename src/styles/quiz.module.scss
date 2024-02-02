@@ -28,7 +28,6 @@
 .pictureFrame{
 height: 100%;
 
-background-color: red;
 }
 .bool {
   margin-left: 10px;
@@ -41,13 +40,11 @@ background-color: red;
 .quiz_section {
   height: 40vh;
   width: 100vw;
-  border: 2px solid green;
 }
 
 .question_wrapper {
   height: 40%;
   width: 100vw;
-  border: 2px solid rgb(215, 117, 25);
   @include center;
 }
 
@@ -104,7 +101,6 @@ background-color: red;
   justify-content: space-between;
   height: 60%;
   width: 100vw;
-  background-color: aqua;
 
 }
 
@@ -172,7 +168,7 @@ h4 {
   }
 
   .quiz_section {
-    height: 50vh;
+    height: 47vh;
   }
 
   .question_content {
