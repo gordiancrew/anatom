@@ -55,6 +55,6 @@ export const dataQuestionRu = [
             path: "https://lh3.google.com/u/0/d/1Z5ij12nOQLZkEyk9aE4bBi2torynEJBE=w943-h858-iv1"
 
         }
-    ],
-   
+    ]
+
 ]
