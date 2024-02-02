@@ -106,8 +106,11 @@ function Question() {
           timer={timer}
           setRightAnswerStyle={setRightAnswerStyle}
         />
-        <Picture/>
+        {/* <Picture
+        path="https://lh3.google.com/u/0/d/1YpXfTQEXx31BL-9Ypz1L-wqwoSJ7Q-IK=w2000-h3948-iv1"
+        /> */}
         <QuizContent
+        path={ dataQuestionRu[level][0].path? dataQuestionRu[level][0].path:"iii"}
           ask={
             // localStorage.languagegame === 'en' ? dataQuestionEn[level][0].ask :
             // localStorage.languagegame === 'bl' ? dataQuestionBl[level][0].ask :

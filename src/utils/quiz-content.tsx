@@ -2,16 +2,18 @@ import React, { useEffect, useState } from "react";
 import useSound from "use-sound";
 import { booleanFalse, booleanTrue } from "../data/boolean";
 import { shuffleArr } from "../data/functionss";
-import { dataQuestionBl, dataQuestionEn, dataQuestionRu } from "../data/questions";
+import {  dataQuestionRu } from "../data/questions";
 import cl from "../styles/quiz.module.scss";
 import { CheckAnswer } from "../types.ts/chaeckAnswer";
 import { questState } from "../types.ts/iquest-state";
 import { ICase } from "../types.ts/iquestion";
 import { musicUrlEnum } from "../types.ts/music-url";
+import Picture from "../utils/picture";
 
 interface IQuiz {
   ask: string;
   anses: Array<ICase>;
+  path:string;
   level: number;
   setLevel: Function;
   setTimeOn: Function;
@@ -43,20 +45,20 @@ export default function QuizContent(props: IQuiz) {
     shuffleArr(boolTrue);
   }, []);
 
-  function voice() {
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(localStorage.languagegame === 'en' ? dataQuestionEn[props.level][0].ask :
-      localStorage.languagegame === 'bl' ? dataQuestionBl[props.level][0].ask :
-        dataQuestionRu[props.level][0].ask);
-    if (localStorage.languagegame === 'ru') {
-      utterance.voice = window.speechSynthesis.getVoices()[17]
-    } else if (localStorage.languagegame === 'en') {
-      utterance.voice = window.speechSynthesis.getVoices()[3]
-    } else if (localStorage.languagegame === 'bl') {
-      utterance.voice = window.speechSynthesis.getVoices()[17]
-    }
-    window.speechSynthesis.speak(utterance);
-  }
+  // function voice() {
+  //   window.speechSynthesis.cancel();
+  //   const utterance = new SpeechSynthesisUtterance(localStorage.languagegame === 'en' ? dataQuestionEn[props.level][0].ask :
+  //     localStorage.languagegame === 'bl' ? dataQuestionBl[props.level][0].ask :
+  //       dataQuestionRu[props.level][0].ask);
+  //   if (localStorage.languagegame === 'ru') {
+  //     utterance.voice = window.speechSynthesis.getVoices()[17]
+  //   } else if (localStorage.languagegame === 'en') {
+  //     utterance.voice = window.speechSynthesis.getVoices()[3]
+  //   } else if (localStorage.languagegame === 'bl') {
+  //     utterance.voice = window.speechSynthesis.getVoices()[17]
+  //   }
+  //   window.speechSynthesis.speak(utterance);
+  // }
 
   function disableAnswBtns() {
     setStateAnswBtns(!stateAnswBtns);
@@ -117,7 +119,10 @@ export default function QuizContent(props: IQuiz) {
   };
   return (
     <section className={cl.quiz_section}>
-      <div onClick={voice} className={cl.question_wrapper}>
+        <Picture
+        path={props.path}
+        />
+      <div  className={cl.question_wrapper}>
         <div className={cl.question_wrapper__horizontLine}></div>
         <div className={cl.question_wrapper__hexagon}>
           <div className={cl.question_content}>
