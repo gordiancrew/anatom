@@ -4,31 +4,7 @@ import { CheckAnswer } from "../types.ts/chaeckAnswer";
 
 export const dataQuestionRu = [
 
-    [
-        {
-            ask: "Что за кость выделена голубым цветом?",
-            ans: [
-                {
-                    content: "лобная",
-                    check: CheckAnswer.right
-                },
-                {
-                    content: "затылочная",
-                    check: CheckAnswer.second
-                },
-                {
-                    content: "игровая",
-                    check: CheckAnswer.falsy
-                },
-                {
-                    content: "горловая",
-                    check: CheckAnswer.falsy
-                }
-            ],
-            path: "https://lh3.google.com/u/0/d/1YpXfTQEXx31BL-9Ypz1L-wqwoSJ7Q-IK=w2000-h3948-iv1"
 
-        }
-    ],
     [
         {
             ask: "Что за мышца выделена синим цветом?",
@@ -50,7 +26,7 @@ export const dataQuestionRu = [
                     check: CheckAnswer.falsy
                 }
             ],
-            path: "https://lh3.google.com/u/0/d/1Z5ij12nOQLZkEyk9aE4bBi2torynEJBE=w943-h858-iv1"
+            path: "https://i.ibb.co/0qqdLVY/IMG-20240202-151806.jpg"
 
         }
     ],
@@ -75,7 +51,7 @@ export const dataQuestionRu = [
                     check: CheckAnswer.falsy
                 }
             ],
-            path: "https://lh3.google.com/u/0/d/1ZINUHJE7O5uMDVhvx4HdmAdyWptDWGUH=w1193-h878-iv1"
+            path: "https://i.ibb.co/rMcQNFd/IMG-20240202-151940.jpg"
 
         }
     ],
@@ -100,7 +76,7 @@ export const dataQuestionRu = [
                     check: CheckAnswer.falsy
                 }
             ],
-            path: "https://lh3.google.com/u/0/d/1ZGe-E_6hE9W20Iq31RMhO5SVxasMkzP3=w1193-h878-iv1"
+            path: "https://i.ibb.co/FgRPNrr/IMG-20240202-152012.jpg"
 
         }
     ],
@@ -125,7 +101,7 @@ export const dataQuestionRu = [
                     check: CheckAnswer.falsy
                 }
             ],
-            path: "https://lh3.google.com/u/0/d/1ZFA88HpOvWUmegDrZHq_C-xtf3lbtVWj=w1193-h878-iv1"
+            path: "https://i.ibb.co/MhVRyqB/IMG-20240202-152037.jpg"
 
         }
     ],
@@ -150,7 +126,31 @@ export const dataQuestionRu = [
                     check: CheckAnswer.falsy
                 }
             ],
-            path: "https://lh3.google.com/u/0/d/1Z6POS1UCavG9_wTn79zTBTKROSWdrkKK=w1193-h878-iv1"
+            path: "https://i.ibb.co/4WSKjwR/IMG-20240202-152107.jpg"
+
+        }
+    ], [
+        {
+            ask: "Какая кость выделена синим цветом?",
+            ans: [
+                {
+                    content: "Лобная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Затылочная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Гороховидная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Теменная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/bJH7vwP/IMG-20240203-234332.jpg"
 
         }
     ],
