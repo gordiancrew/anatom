@@ -3,18 +3,301 @@ import { CheckAnswer } from "../types.ts/chaeckAnswer";
 
 
 export const dataQuestionRu = [
+    [
+        {
+            ask: "Что изображено на картинке?",
+            ans: [
+                {
+                    content: "Череп",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Таз",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Бедро",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Позвоночник",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/kHq10xK/IMG-20240205-110517.jpg"
+
+        },
+        {
+            ask: "Что изображено на картинке?",
+            ans: [
+                {
+                    content: "Рука",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Нога",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Спина",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Ухо",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/Npfbfmm/IMG-20240205-110534.jpg"
+
+        },
+        {
+            ask: "Что изображено на картинке?",
+            ans: [
+                {
+                    content: "Ноги",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Руки",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Голова",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Позвоночник",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/rm5P749/IMG-20240205-110824.jpg"
+
+        },
+        {
+            ask: "Что изображено на картинке?",
+            ans: [
+                {
+                    content: "Спина",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Грудь",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Ноги",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Голова",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/jv36bGm/IMG-20240205-111450.jpg"
+
+        },
+        {
+            ask: "Что выделено синим на картинке?",
+            ans: [
+                {
+                    content: "Мышца",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Кость",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Нерв",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Сосуд",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/m9QXmdB/IMG-20240205-111516.jpg"
+
+        },
+        {
+            ask: "Что выделено синим на картинке?",
+            ans: [
+                {
+                    content: "Кость",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Мышца",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Нерв",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Сосуд",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/fSgjnzh/IMG-20240205-111537.jpg"
+
+        }
+
+    ],
+    [
+        {
+            ask: "Что показано на картинке?",
+            ans: [
+                {
+                    content: "Позвоночный столб",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Таз",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Нога",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Прямая мышца живота",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/p4j4JsX/IMG-20240205-112520.jpg"
+
+        },
+        {
+            ask: "Что показано на картинке?",
+            ans: [
+                {
+                    content: "Таз",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Грудная клетка",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Руки",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Череп",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/HCD0YDM/IMG-20240205-112747.jpg"
+
+        },
+        {
+            ask: "Что показано на картинке?",
+            ans: [
+                {
+                    content: "Грудная клетка",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Таз",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Нога",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Череп",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/7jnmcJ5/IMG-20240205-112450.jpg"
+
+        }
+    ],
+    [
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Коленный",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Тазобедренный",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Голеностопный",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/sVy74JG/IMG-20240205-113833.jpg"
+
+        },
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Коленный",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Тазобедренный",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Голеностопный",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/4jyRZTp/IMG-20240205-113753.jpg"
+
+        },
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Тазобедренный",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Коленный",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Голеностопный",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/KwymY8Y/IMG-20240205-113704.jpg"
+
+        }
+    ],
 
 
     [
         {
-            ask: "Что за мышца выделена синим цветом?",
+            ask: "Какая мышца выделена синим цветом?",
             ans: [
                 {
                     content: "Большая ягодичная",
                     check: CheckAnswer.right
                 },
                 {
-                    content: "Малая ягодичная",
+                    content: "Жевательная ",
                     check: CheckAnswer.second
                 },
                 {
@@ -27,6 +310,52 @@ export const dataQuestionRu = [
                 }
             ],
             path: "https://i.ibb.co/0qqdLVY/IMG-20240202-151806.jpg"
+
+        },
+        {
+            ask: "Какая мышца выделена синим цветом?",
+            ans: [
+                {
+                    content: "Большая грудная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Икроножная ",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Плечелучевая",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Прямая мышца живота",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/3mLDcDg/IMG-20240205-123012.jpg"
+
+        },
+        {
+            ask: "Какая мышца выделена синим цветом?",
+            ans: [
+                {
+                    content: "Круглая мышца глаз",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Икроножная ",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Плечелучевая",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Малая ягодичная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/BqnmVtd/IMG-20240205-122957.jpg"
 
         }
     ],
@@ -43,7 +372,7 @@ export const dataQuestionRu = [
                     check: CheckAnswer.second
                 },
                 {
-                    content: "Ключица",
+                    content: "Бедренная",
                     check: CheckAnswer.falsy
                 },
                 {
@@ -52,6 +381,52 @@ export const dataQuestionRu = [
                 }
             ],
             path: "https://i.ibb.co/rMcQNFd/IMG-20240202-151940.jpg"
+
+        },
+        {
+            ask: "Какая кость выделена синим цветом?",
+            ans: [
+                {
+                    content: "Плечевая",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Пяточная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Бедренная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Лобная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/SfdFCrv/IMG-20240205-122941.jpg"
+
+        },
+        {
+            ask: "Какая кость выделена синим цветом?",
+            ans: [
+                {
+                    content: "Ребро",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Надколенник",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Нижняя челюсть",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Тазовая",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/3R28Hft/IMG-20240205-122924.jpg"
 
         }
     ],
