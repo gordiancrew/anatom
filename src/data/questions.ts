@@ -215,77 +215,6 @@ export const dataQuestionRu = [
 
         }
     ],
-    [
-        {
-            ask: "Какой сустав на картинке?",
-            ans: [
-                {
-                    content: "Плечевой",
-                    check: CheckAnswer.right
-                },
-                {
-                    content: "Коленный",
-                    check: CheckAnswer.second
-                },
-                {
-                    content: "Тазобедренный",
-                    check: CheckAnswer.falsy
-                },
-                {
-                    content: "Голеностопный",
-                    check: CheckAnswer.falsy
-                }
-            ],
-            path: "https://i.ibb.co/sVy74JG/IMG-20240205-113833.jpg"
-
-        },
-        {
-            ask: "Какой сустав на картинке?",
-            ans: [
-                {
-                    content: "Коленный",
-                    check: CheckAnswer.right
-                },
-                {
-                    content: "Плечевой",
-                    check: CheckAnswer.second
-                },
-                {
-                    content: "Тазобедренный",
-                    check: CheckAnswer.falsy
-                },
-                {
-                    content: "Голеностопный",
-                    check: CheckAnswer.falsy
-                }
-            ],
-            path: "https://i.ibb.co/4jyRZTp/IMG-20240205-113753.jpg"
-
-        },
-        {
-            ask: "Какой сустав на картинке?",
-            ans: [
-                {
-                    content: "Тазобедренный",
-                    check: CheckAnswer.right
-                },
-                {
-                    content: "Коленный",
-                    check: CheckAnswer.second
-                },
-                {
-                    content: "Плечевой",
-                    check: CheckAnswer.falsy
-                },
-                {
-                    content: "Голеностопный",
-                    check: CheckAnswer.falsy
-                }
-            ],
-            path: "https://i.ibb.co/KwymY8Y/IMG-20240205-113704.jpg"
-
-        }
-    ],
 
 
     [
@@ -432,6 +361,78 @@ export const dataQuestionRu = [
     ],
     [
         {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Коленный",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Тазобедренный",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Голеностопный",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/sVy74JG/IMG-20240205-113833.jpg"
+
+        },
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Коленный",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Тазобедренный",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Голеностопный",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/4jyRZTp/IMG-20240205-113753.jpg"
+
+        },
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Тазобедренный",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Коленный",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Голеностопный",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/KwymY8Y/IMG-20240205-113704.jpg"
+
+        }
+    ],
+
+    [
+        {
             ask: "Какая мышца выделена синим цветом?",
             ans: [
                 {
@@ -439,7 +440,7 @@ export const dataQuestionRu = [
                     check: CheckAnswer.right
                 },
                 {
-                    content: "Крепчайшая",
+                    content: "Трапеция",
                     check: CheckAnswer.second
                 },
                 {
@@ -453,9 +454,8 @@ export const dataQuestionRu = [
             ],
             path: "https://i.ibb.co/FgRPNrr/IMG-20240202-152012.jpg"
 
-        }
-    ],
-    [
+        },
+
         {
             ask: "Какая мышца выделена синим цветом?",
             ans: [
@@ -477,6 +477,29 @@ export const dataQuestionRu = [
                 }
             ],
             path: "https://i.ibb.co/MhVRyqB/IMG-20240202-152037.jpg"
+
+        },
+        {
+            ask: "Какая мышца выделена синим цветом?",
+            ans: [
+                {
+                    content: "Прямая мышца живота",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Длинная мышца живота",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Пирамидальная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Косая мышца живота",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/tMgTXFK/IMG-20240207-113640.jpg"
 
         }
     ],
@@ -503,8 +526,8 @@ export const dataQuestionRu = [
             ],
             path: "https://i.ibb.co/4WSKjwR/IMG-20240202-152107.jpg"
 
-        }
-    ], [
+        },
+  
         {
             ask: "Какая кость выделена синим цветом?",
             ans: [
@@ -527,8 +550,125 @@ export const dataQuestionRu = [
             ],
             path: "https://i.ibb.co/bJH7vwP/IMG-20240203-234332.jpg"
 
+        },
+        {
+            ask: "Какая кость выделена синим цветом?",
+            ans: [
+                {
+                    content: "Ключица",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Грудина",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Лопатка",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Ребро",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/vcTHnG8/IMG-20240207-113615.jpg"
+
         }
     ],
+    [
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Лучезапястный",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Кистевой",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Локтевой",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/2Z10F4Q/IMG-20240207-115048.jpg"
+
+        },
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Голеностопный",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Ступневой",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Берцовый",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Коленный",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/k8h33LM/IMG-20240207-115000.jpg"
+
+        },
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Локтевой",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Лучевой",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Лучезапястный",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/85Jccxw/IMG-20240207-114926.jpg"
+
+        },
+        {
+            ask: "Какой сустав на картинке?",
+            ans: [
+                {
+                    content: "Грудино-ключичный",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Крестцово-подвздошное сочленение",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Акромиально-ключичное сочленение",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Плечевой",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/tJBGgDr/IMG-20240207-114852.jpg"
+
+        }
+    ]
 
 
 ]
