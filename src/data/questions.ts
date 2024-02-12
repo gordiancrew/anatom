@@ -268,7 +268,7 @@ export const dataQuestionRu = [
             ask: "Какая мышца выделена синим цветом?",
             ans: [
                 {
-                    content: "Круглая мышца глаз",
+                    content: "Круговая мышца глаз",
                     check: CheckAnswer.right
                 },
                 {
@@ -666,6 +666,171 @@ export const dataQuestionRu = [
                 }
             ],
             path: "https://i.ibb.co/tJBGgDr/IMG-20240207-114852.jpg"
+
+        }
+    ],
+    [
+         {
+            ask: "Какой элемент выделен голубым цветом?",
+            ans: [
+                {
+                    content: "Паховая связка",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Крестцово-поясничная связка",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Лобковый симфиз",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Запирательная мембрана",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/9pNXHT9/IMG-20240212-113406.jpg"
+
+        },
+        {
+            ask: "Какой элемент выделен голубым цветом?",
+            ans: [
+                {
+                    content: "Запирательная мембрана",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Крестцово-поясничная связка",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Лобковый симфиз",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Паховая связка",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/TW7cscq/IMG-20240212-113350.jpg"
+
+        },
+         {
+            ask: "Какой элемент выделен голубым цветом?",
+            ans: [
+                {
+                    content: "Лобковый симфиз",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Крестцово-поясничная связка",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Запирательная мембрана",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Паховая связка",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/ydKBj35/IMG-20240212-113333.jpg"
+
+        }
+    ],
+    [
+        {
+            ask: "Какой позвонок показан на картинке?",
+            ans: [
+                {
+                    content: "Атлант",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Осевой",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Выступающий",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Зевс",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/bst1G3h/IMG-20240212-115016.jpg"
+
+        },
+          {
+            ask: "Какой позвонок показан на картинке?",
+            ans: [
+                {
+                    content: "Осевой",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Атлант",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Выступающий",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Титан",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/g6Gg4yg/IMG-20240212-115040.jpg"
+
+        },
+          {
+            ask: "Какой позвонок показан на картинке?",
+            ans: [
+                {
+                    content: "Шейный",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Грудной",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Поясничный",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Крестцовый",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/rmSXWZK/IMG-20240212-114959.jpg"
+
+        },
+          {
+            ask: "Какое ребро на картинке?",
+            ans: [
+                {
+                    content: "Первое",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Второе",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Седьмое",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Двенадцатое",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/WkvLWgN/IMG-20240212-114932.jpg"
 
         }
     ]
