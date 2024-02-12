@@ -22,12 +22,12 @@ interface IHeaderOptions {
 }
 function QuestionHeader(props: IHeaderOptions) {
   const [playFiftyFifty] = useSound(musicUrlEnum.fiftyFifty);
-  function booleanHundler() {
-    props.setItemHintBoolean(true);
-    props.setBooleanStyle({ display: "flex" });
-    props.setTimeOn(false);
-    playFiftyFifty();
-  }
+  // function booleanHundler() {
+  //   props.setItemHintBoolean(true);
+  //   props.setBooleanStyle({ display: "flex" });
+  //   props.setTimeOn(false);
+  //   playFiftyFifty();
+  // }
 
   function fiftyFiftyHundler() {
     props.setItemFiftyFifty(true);
@@ -37,11 +37,11 @@ function QuestionHeader(props: IHeaderOptions) {
     props.setTimeOn(false);
     playFiftyFifty();
   }
-  function callHundler() {
-    props.setVisibleHintCall(true);
-    props.setTimeOn(false);
-    playFiftyFifty();
-  }
+  // function callHundler() {
+  //   props.setVisibleHintCall(true);
+  //   props.setTimeOn(false);
+  //   playFiftyFifty();
+  // }
   function keepHundler() {
     props.setKeepMoney(true);
     props.setAnswerShema(questState.end)
@@ -51,13 +51,13 @@ function QuestionHeader(props: IHeaderOptions) {
   return (
     <div className={headerStyle.headerBox}>
       <div className={headerStyle.headerHints}>
-        <div
+        {/* <div
           onClick={!props.itemHintBoolean ? booleanHundler : () => { }}
           style={{ backgroundColor: props.itemHintBoolean ? "black" : "" }}
           className={headerStyle.headerItem}
         >
           Bool
-        </div>
+        </div> */}
         <div
           onClick={!props.itemFiftyFifty ? fiftyFiftyHundler : () => { }}
           style={{ backgroundColor: props.itemFiftyFifty ? "black" : "" }}
@@ -65,7 +65,7 @@ function QuestionHeader(props: IHeaderOptions) {
         >
           50:50
         </div>
-        <div
+        {/* <div
           onClick={!props.itemHintCall ? callHundler : () => { }}
           style={{ backgroundColor: props.itemHintCall ? "black" : "" }}
           className={headerStyle.headerItem}
@@ -73,7 +73,7 @@ function QuestionHeader(props: IHeaderOptions) {
          <img
          className={headerStyle.icon}
          src='https://cdn-icons-png.flaticon.com/512/159/159832.png' alt=""></img>
-        </div>
+        </div> */}
       </div>
       <div className={headerStyle.headerHints}>
         <div
@@ -86,7 +86,7 @@ function QuestionHeader(props: IHeaderOptions) {
          src='https://cdn-icons-png.flaticon.com/512/2174/2174616.png' alt=""></img>
           </div>
 
-        <Link to="/home" className={headerStyle.headerItem}>
+        <Link to="/" className={headerStyle.headerItem}>
         <img className={headerStyle.icon}
          src='https://cdn.icon-icons.com/icons2/1769/PNG/512/4115235-exit-logout-sign-out_114030.png' alt=""></img>
         </Link>

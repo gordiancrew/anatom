@@ -51,16 +51,16 @@ function End(props: IEnd) {
   return (
     <div className={style.wrappage}>
       <h1>{games}</h1>
-      <h2 className={style.wrapperHeaderWin}>{'gameover'}</h2>
+      <h2 className={style.wrapperHeaderWin}>{'Игра окончена'}</h2>
       <h1 className={style.wrapperWin}>
-        {"you result"}
+        {"Ваш результат:"}
         <br /> {winnerSum}
       </h1>
       <Link to="/">
         <button
           onClick={updateScore}
 
-          className={st.button_endPage}>{'gameover.exitmenu'}</button>
+          className={st.button_endPage}>{'В меню'}</button>
       </Link>
     </div>
   );

@@ -833,6 +833,100 @@ export const dataQuestionRu = [
             path: "https://i.ibb.co/WkvLWgN/IMG-20240212-114932.jpg"
 
         }
+    ],
+    [
+         {
+            ask: "Какая мышца выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Грушевидная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Квадратная бедра",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Малая ягодичная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Подвздошная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/9WVkvRr/IMG-20240212-124141.jpg"
+
+        },
+         {
+            ask: "Какая мышца выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Квадратная бедра",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Грушевидная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Малая ягодичная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Подвздошная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/Tqsmmpk/IMG-20240212-124205.jpg"
+
+        },
+         {
+            ask: "Какая мышца выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Малая ягодичная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Квадратная бедра",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Грушевидная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Подвздошная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/Z8p61wW/IMG-20240212-124105.jpg"
+
+        },
+         {
+            ask: "Какая мышца выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Подвздошная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Квадратная бедра",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Малая ягодичная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "ПодвздошнаяГрушевидная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/nCqk8vj/IMG-20240212-124123.jpg"
+
+        }
     ]
 
 
