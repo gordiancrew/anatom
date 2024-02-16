@@ -927,6 +927,172 @@ export const dataQuestionRu = [
             path: "https://i.ibb.co/nCqk8vj/IMG-20240212-124123.jpg"
 
         }
+    ],
+    [
+        {
+            ask: "Какая кость выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Подвздошная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Лобковая",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Седалищная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Вертлужная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/BtH7Nmw/IMG-20240216-144652.jpg"
+
+        },
+        {
+            ask: "Какая кость выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Седалищная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Лобковая",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Подвздошная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Вертлужная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/4mSs4Z8/IMG-20240216-144615.jpg"
+
+        },
+        {
+            ask: "Какая кость выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Лобковая",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Седалищная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Подвздошная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Вертлужная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/gjL2Sct/IMG-20240216-144630.jpg"
+
+        }
+    ],
+    [
+        {
+            ask: "Какая мышца выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Подостная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Надостная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Большая круглая",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Поднимающая лопатку",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/Yh6VMYR/IMG-20240216-145332.jpg"
+
+        },
+        {
+            ask: "Какая мышца выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Надостная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Подостная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Большая круглая",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Поднимающая лопатку",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/30TKWLP/IMG-20240216-145239.jpg"
+
+        },
+        {
+            ask: "Какая мышца выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Большая круглая",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Надостная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Подостная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Поднимающая лопатку",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/TRstPWr/IMG-20240216-145224.jpg"
+
+        },
+        {
+            ask: "Какая мышца выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Поднимающая лопатку",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Надостная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Большая круглая",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Подостная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/zZPYBvM/IMG-20240216-145301.jpg"
+
+        }
+
     ]
 
 
