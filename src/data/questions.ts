@@ -1093,6 +1093,104 @@ export const dataQuestionRu = [
 
         }
 
+    ],
+    [
+        {
+            ask: "Какая кость выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Пяточная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Таранная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Ладьевидная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Кубовидная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/brtKMWm/IMG-20240219-122357.jpg"
+
+        },
+        {
+            ask: "Какая кость выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Таранная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Пяточная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Ладьевидная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Кубовидная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/qMFLCkS/IMG-20240219-122424.jpg"
+
+        },
+        {
+            ask: "Какая кость выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Ладьевидная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Таранная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Пяточная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Кубовидная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/XDJySY7/IMG-20240219-122317.jpg"
+
+        },
+        {
+            ask: "Какая кость выделена голубым цветом?",
+            ans: [
+                {
+                    content: "Кубовидная",
+                    check: CheckAnswer.right
+                },
+                {
+                    content: "Таранная",
+                    check: CheckAnswer.second
+                },
+                {
+                    content: "Ладьевидная",
+                    check: CheckAnswer.falsy
+                },
+                {
+                    content: "Пяточная",
+                    check: CheckAnswer.falsy
+                }
+            ],
+            path: "https://i.ibb.co/WBmqY6c/IMG-20240219-122331.jpg"
+
+        }
+
+
+
+
     ]
 
 
